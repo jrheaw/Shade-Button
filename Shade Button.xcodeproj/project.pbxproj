@@ -13,6 +13,7 @@
 		C899CC4B1AA8BBB400AC57F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C899CC4A1AA8BBB400AC57F6 /* Images.xcassets */; };
 		C899CC4E1AA8BBB400AC57F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899CC4C1AA8BBB400AC57F6 /* LaunchScreen.xib */; };
 		C899CC5A1AA8BBB400AC57F6 /* Shade_ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899CC591AA8BBB400AC57F6 /* Shade_ButtonTests.swift */; };
+		C899CC641AA8BE2D00AC57F6 /* shade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C899CC631AA8BE2D00AC57F6 /* shade.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C899CC531AA8BBB400AC57F6 /* Shade ButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shade ButtonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C899CC581AA8BBB400AC57F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C899CC591AA8BBB400AC57F6 /* Shade_ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shade_ButtonTests.swift; sourceTree = "<group>"; };
+		C899CC631AA8BE2D00AC57F6 /* shade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shade.mp3; path = ../../../Downloads/shade.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				C899CC431AA8BBB400AC57F6 /* AppDelegate.swift */,
 				C899CC451AA8BBB400AC57F6 /* ViewController.swift */,
+				C899CC631AA8BE2D00AC57F6 /* shade.mp3 */,
 				C899CC471AA8BBB400AC57F6 /* Main.storyboard */,
 				C899CC4A1AA8BBB400AC57F6 /* Images.xcassets */,
 				C899CC4C1AA8BBB400AC57F6 /* LaunchScreen.xib */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					C899CC3D1AA8BBB400AC57F6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = SMR4NAHB89;
 					};
 					C899CC521AA8BBB400AC57F6 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -192,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C899CC641AA8BE2D00AC57F6 /* shade.mp3 in Resources */,
 				C899CC491AA8BBB400AC57F6 /* Main.storyboard in Resources */,
 				C899CC4E1AA8BBB400AC57F6 /* LaunchScreen.xib in Resources */,
 				C899CC4B1AA8BBB400AC57F6 /* Images.xcassets in Resources */,
@@ -338,7 +343,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Shade Button/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Shade Button/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +418,7 @@
 				C899CC5F1AA8BBB400AC57F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C899CC601AA8BBB400AC57F6 /* Build configuration list for PBXNativeTarget "Shade ButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +427,7 @@
 				C899CC621AA8BBB400AC57F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

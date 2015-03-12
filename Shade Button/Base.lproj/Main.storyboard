@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shade_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +19,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wr-CD-etv">
+                                <rect key="frame" x="200" y="300" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Wr-CD-etv" secondAttribute="height" multiplier="1:1" id="gq4-Mo-8NF"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.70588235294117641" green="0.098039215686274508" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyd-sJ-aoW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN CASE OF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlK-nD-kKT">
+                                <rect key="frame" x="16" y="88" width="568" height="65"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHADE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1p-UL-Y3s">
+                                <rect key="frame" x="194" y="123" width="212" height="97"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="73"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.25098039215686274" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.69000000000000006" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91679566560526304" green="0.71744247447368414" blue="0.91514447885789485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="0.25" constant="8" id="12c-rO-Kqz"/>
+                            <constraint firstItem="R1p-UL-Y3s" firstAttribute="top" secondItem="2Wr-CD-etv" secondAttribute="bottom" constant="8" id="1wB-L5-s0F"/>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4bQ-le-LcU"/>
+                            <constraint firstItem="R1p-UL-Y3s" firstAttribute="top" secondItem="2Wr-CD-etv" secondAttribute="bottom" constant="8" id="8za-uA-PIM"/>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9wV-IK-IRO"/>
+                            <constraint firstItem="R1p-UL-Y3s" firstAttribute="top" secondItem="JlK-nD-kKT" secondAttribute="bottom" constant="-30" id="AOT-72-5SM"/>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BfF-rq-dvX"/>
+                            <constraint firstAttribute="centerY" secondItem="R1p-UL-Y3s" secondAttribute="centerY" constant="150" id="HhR-mJ-qKP"/>
+                            <constraint firstAttribute="centerX" secondItem="JlK-nD-kKT" secondAttribute="centerX" id="I1J-aS-Q1X"/>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JUj-hD-55L"/>
+                            <constraint firstItem="2Wr-CD-etv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="23:300" constant="154" id="JnQ-zs-Wpw"/>
+                            <constraint firstAttribute="centerX" secondItem="JlK-nD-kKT" secondAttribute="centerX" id="Kw4-a2-GZ3"/>
+                            <constraint firstAttribute="centerX" secondItem="2Wr-CD-etv" secondAttribute="centerX" id="Nkf-B2-8sl"/>
+                            <constraint firstAttribute="centerY" secondItem="R1p-UL-Y3s" secondAttribute="centerY" multiplier="1.75" id="PGd-PB-CiD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Wr-CD-etv" secondAttribute="bottom" constant="100" id="TGk-zd-PUi"/>
+                            <constraint firstItem="R1p-UL-Y3s" firstAttribute="leading" secondItem="JlK-nD-kKT" secondAttribute="trailing" constant="-390" id="ae2-ap-0OD"/>
+                            <constraint firstItem="JlK-nD-kKT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b0L-Xz-ZVY"/>
+                            <constraint firstAttribute="centerY" secondItem="2Wr-CD-etv" secondAttribute="centerY" multiplier="0.75" id="cuR-Rc-u7J"/>
+                            <constraint firstAttribute="centerY" secondItem="2Wr-CD-etv" secondAttribute="centerY" id="eu4-rC-r0a"/>
+                            <constraint firstAttribute="centerX" secondItem="R1p-UL-Y3s" secondAttribute="centerX" id="kHQ-sq-ZTD"/>
+                            <constraint firstAttribute="centerX" secondItem="2Wr-CD-etv" secondAttribute="centerX" id="ls1-SL-Vtq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R1p-UL-Y3s" secondAttribute="bottom" constant="20" id="zjD-X5-ySe"/>
+                            <constraint firstAttribute="centerX" secondItem="R1p-UL-Y3s" secondAttribute="centerX" id="zks-a3-vie"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="12c-rO-Kqz"/>
+                                <exclude reference="4bQ-le-LcU"/>
+                                <exclude reference="9wV-IK-IRO"/>
+                                <exclude reference="Kw4-a2-GZ3"/>
+                                <exclude reference="b0L-Xz-ZVY"/>
+                                <exclude reference="1wB-L5-s0F"/>
+                                <exclude reference="8za-uA-PIM"/>
+                                <exclude reference="HhR-mJ-qKP"/>
+                                <exclude reference="ae2-ap-0OD"/>
+                                <exclude reference="zks-a3-vie"/>
+                                <exclude reference="Nkf-B2-8sl"/>
+                                <exclude reference="eu4-rC-r0a"/>
+                                <exclude reference="TGk-zd-PUi"/>
+                                <exclude reference="zjD-X5-ySe"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="shadeButton" destination="2Wr-CD-etv" id="d5l-Cy-K10"/>
+                        <outlet property="shadeLabel" destination="R1p-UL-Y3s" id="buh-kl-cVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
